@@ -13,4 +13,8 @@ public class MainController {
     public String index(){
         return "spring, summer, autumn, winter boot";
     }
+    @GetMapping("/")
+    public String root() {
+        return "redirect:/question/list";
+    }
 }
