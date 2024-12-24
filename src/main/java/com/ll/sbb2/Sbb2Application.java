@@ -11,4 +11,4 @@ public class Sbb2Application {
     }
 
 }
-//2-05 junit으로 테스트 데이터 만들기부터 시작
+//2-11 부터
