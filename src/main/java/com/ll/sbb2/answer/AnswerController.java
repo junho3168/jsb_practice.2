@@ -1,5 +1,6 @@
 package com.ll.sbb2.answer;
 
+
 import com.ll.sbb2.question.Question;
 import com.ll.sbb2.question.QuestionService;
 import lombok.RequiredArgsConstructor;
@@ -19,7 +20,8 @@ public class AnswerController {
     private final AnswerService answerService;
 
     @PostMapping("/create/{id}")
-    public String createAnswer(Model model, @PathVariable("id") Integer id, @RequestParam(value = "content") String content) {
+    public String createAnswer(Model model, @PathVariable("id") Integer id,
+                               @RequestParam(value = "content") String content) {
         Question question = this.questionService.getQuestion(id);
         this.answerService.create(question, content);
         return String.format("redirect:/question/detail/%s", id);
