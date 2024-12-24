@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.ui.Model;
 import java.util.List;
-@RequestMapping
+@RequestMapping("/question")
 @RequiredArgsConstructor
 @Controller
 
